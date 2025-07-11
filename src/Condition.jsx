@@ -1,6 +1,9 @@
 import { useState } from "react";
+
 function Condition() {
+
   const [count, setCount] = useState(0);
+  
   return (
     <div className="bg-amber-200 m-4 p-4" >
       <h1 className="text-2xl font-bold">Condition Multiple in React</h1>
@@ -8,7 +11,6 @@ function Condition() {
       <button 
       className="border-2 border-amber-950 bg-blue-400 p-1 m-2"
       onClick={() => setCount(count + 1)}>Counter</button>
-      
       {
         count == 0? <h1>Condition 0</h1>
         :count == 1? <h1>Condition 1</h1>

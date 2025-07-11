@@ -1,7 +1,10 @@
 import { useState } from "react";
+
 const Counter = () => {
+
   const [count, setCount] = useState(0);
   const [rCounter, setRCounter] = useState(10);
+  
   return (
     <div className="bg-amber-200 m-4 p-4">
       <h1 className="text-2xl font-bold">Counter</h1>
