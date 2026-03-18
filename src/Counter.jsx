@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const Counter = () => {
 
-  const [count, setCount] = useState(0);
+  const [count, setIsCount] = useState(0);
   const [rCounter, setRCounter] = useState(10);
   
   return (
@@ -17,7 +17,7 @@ const Counter = () => {
       </button>
       <button
       className="border-2 border-amber-950 bg-blue-400 p-1 m-2"
-      onClick={() => setCount(count + 1)}>Update Counter</button>
+      onClick={() => setIsCount(count + 1)}>Update Counter</button>
     </div>
   );
 };
